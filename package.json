@@ -1,0 +1,28 @@
+{
+  "version": "0.0.1",
+  "name": "app-bm-abv",
+  "description": "Brewer Map App for ABV calculation, made for homebrewers",
+  "main": "dist/app-bm-abv.js",
+  "keywords": [
+    "lit-element",
+    "brewer-map"
+  ],
+  "dependencies": {
+    "@polymer/lit-element": "^0.6.0",
+    "@webcomponents/webcomponentsjs": "^2.0.2",
+    "lit-html": "^0.11.4",
+    "@material/mwc-icon": "^0.2.1",
+    "@material/top-app-bar": "^0.40.0",
+    "@material/textfield": "^0.39.3"
+  },
+  "scripts": {
+    "test": "wct --npm",
+    "start": "polymer serve --npm --open",
+    "lint": "polymer lint",
+    "reset": "rm -rf node_modules"
+  },
+  "devDependencies": {
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  }
+}
