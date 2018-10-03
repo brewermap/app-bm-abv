@@ -32,11 +32,11 @@ export class AppBMABV extends LitElement {
       <bm-top-app-bar title="ABV Calculator" menu></bm-top-app-bar>
       <div class="bm-abv-container">
         <div class="bm-abv-result ${this.abv <= 0 ? 'bm-abv-result_disabled' : ''}">
-          <h1 class="bm-abv-result-number">${this.abv ? this.abv.toFixed(2) : '0.00'}</h1>
+          <h1 class="bm-abv-result-number">${this.abv ? this.abv.toFixed(2) : '0.00'}% &nbsp;</h1>
           <small class="bm-abv-result-tag">ABV</small>
         </div>
-        <bm-textfield id="inputOG" value="1065" type="number" label="Gravedad Original (OG)" outlined></bm-textfield>
-        <bm-textfield id="inputFG" value="1008" type="number" label="Gravedad Final (FG)" outlined></bm-textfield>
+        <bm-textfield id="inputOG" type="number" label="Gravedad Original (OG)" outlined></bm-textfield>
+        <bm-textfield id="inputFG" type="number" label="Gravedad Final (FG)" outlined></bm-textfield>
         <bm-button id="btnCalc">Calcular</bm-button>
       </div>
     `;

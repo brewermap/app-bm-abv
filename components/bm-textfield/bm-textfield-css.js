@@ -6,6 +6,7 @@ export const style = html`
     :host {
       outline: none;
       display: block;
+      
       /*TEMP*/
       --bm-typography-font-family: 'Raleway', sans-serif;
       --bm-border-radius: 2px;
@@ -326,11 +327,11 @@ export const style = html`
         transition-duration: 75ms;
         opacity: 0.12; }
       .mdc-text-field::before, .mdc-text-field::after {
-        top: calc(50% - 100%);
+        /*top: calc(50% - 100%);*/
         /* @noflip */
-        left: calc(50% - 100%);
+        /*left: calc(50% - 100%);
         width: 200%;
-        height: 200%; }
+      height: 200%; */}
       .mdc-text-field.mdc-ripple-upgraded::after {
         width: var(--mdc-ripple-fg-size, 100%);
         height: var(--mdc-ripple-fg-size, 100%); }
@@ -495,6 +496,7 @@ export const style = html`
     }
 
     .mdc-text-field--outlined {
+      width: 100%;
       border: none;
       overflow: visible; 
     }

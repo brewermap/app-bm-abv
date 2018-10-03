@@ -9,13 +9,27 @@
     body {
       margin: 0;
     }
-    app-bm-abv {
-      width: 100%;
-    }
   </style>
-  <script src="./dist/app-bm-abv.js"></script>
+  
+  <!-- <script src="./dist/app-bm-abv.js"></script> -->
 </head>
 <body>
-  <app-bm-abv></app-bm-abv>
+  <demo-view></demo-view>
+  <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+  <script type="module">
+
+		import {LitElement, html} from '@polymer/lit-element';
+		import {AppBMABV} from './app-bm-abv.js'
+
+    class DemoView extends LitElement {
+      render() {
+        return html`
+          <app-bm-abv></app-bm-abv>
+        `;
+      }
+    }
+
+    customElements.define('demo-view', DemoView);
+  </script>
 </body>
 </html>
